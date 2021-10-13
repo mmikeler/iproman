@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/*=========================== BASE */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-muted {
+    color: #AFAFAF;
+}
+
+/*========================== TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+b {
+    font-weight: 500;
+}
+
+/*======================== COLORS */
+.yellow {
+    color: #FFD25A;
+}
+
+.yellow-dark {
+    color: #F7C02D;
+}
+
+.green {
+    color: #01DB5E;
+}
+
+.gray {
+    color: #AFAFAF;
+}
+
+/* ======================== BTNS */
+
+.bbtn {
+    background-color: #01DB5E;
+    width: fit-content;
+    padding: 15px 30px;
+    border-radius: 7px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bbtn:hover {
+    background-color: #FFD25A;
+}
+
+.bbtn.arrow-right {
+    padding-right: 60px;
+    background: #01DB5E url('./img/arrow-right.svg') no-repeat 90% / 24px;
+}
+
+.bbtn.arrow-right:hover {
+    background: #FFD25A url('./img/arrow-right.svg') no-repeat 95% / 24px;
+}
+
+/*============================== FS */
+.fs {
+    box-shadow: 0px 1px 0px #E5E9F2;
+}
+
+.fs p.gray {
+    margin: 35px 0;
+}
+
+.fs .col-3 {
+    padding: 25px;
+}
+
+/* =========================== S2 */
+.s2 {
+    padding: 80px 0;
+    box-shadow: 0px 1px 0px #E5E9F2;
+}
+
+.s2-header {
+    margin-bottom: 60px;
+}
+
+.s2-header:after {
+    content: '';
+    width: 280px;
+    height: 200px;
+    position: absolute;
+    bottom: -100px;
+    right: -50px;
+    background: url('./img/s2-book.png') no-repeat center / contain;
+}
+
+.decor-title {
+    background-color: #FFD25A;
+    border-radius: 7px;
+    padding: 5px 15px;
+    color: #fff;
+    width: fit-content;
+}
+
+.quot {
+    position: relative;
+}
+
+.quot:before {
+    content: '';
+    width: 68px;
+    height: 56px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url('./img/quot.png') no-repeat center / contain;
+}
+
+/* =================== S3 */
+.s3 {
+    padding: 60px 0;
+    box-shadow: 0px 1px 0px #E5E9F2;
+}
+
+.s3-content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+/*======================= S4 */
+.s4 {
+    padding: 100px 0;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 500px;
+    margin: auto;
+}
+
+.card__header {
+    padding: 25px;
+    background-color: #FFD25A;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 1px 1px #AFAFAF;
+}
+
+.card__body {
+    padding: 25px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.cb-title {
+    font-size: 14px;
+    color: #AFAFAF;
+    text-align: center;
+    margin: 20px 0 45px 0;
+}
+
+.cb-title span {
+    font-size: 48px;
+    color: #000;
+    font-weight: 700;
+}
+
+.cb-list {
+    margin: 0;
+    padding: 0;
+    padding-left: 35px;
+}
+
+.cb-list li {
+    list-style: none;
+    margin-bottom: 23px;
+    position: relative;
+}
+
+.cb-list li:before {
+    content: '';
+    width: 19px;
+    height: 14px;
+    position: absolute;
+    top: 5px;
+    left: -35px;
+    background: url('./img/v.svg') no-repeat center / contain;
+}
+
+.card__body .bbtn {
+    margin-top: 40px;
+}
