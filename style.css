@@ -16,6 +16,17 @@ img {
     color: #AFAFAF;
 }
 
+input:focus,
+select:focus,
+.form-control:focus {
+    border: 0;
+    box-shadow: none;
+}
+
+.w100p {
+    width: 100%;
+}
+
 /*========================== TYPOGRAPHY */
 h1,
 h2,
@@ -70,6 +81,10 @@ b {
     transition: all 0.3s;
 }
 
+.bbtn.small {
+    padding: 5px 30px;
+}
+
 .bbtn:hover {
     background-color: #FFD25A;
 }
@@ -81,6 +96,70 @@ b {
 
 .bbtn.arrow-right:hover {
     background: #FFD25A url('./img/arrow-right.svg') no-repeat 95% / 24px;
+}
+
+.bbtn.gray {
+    width: 100%;
+    text-align: center;
+    background: #F9F9F9;
+    box-shadow: 0px 1px 2px rgba(88, 88, 88, 0.2),
+        0px 2px 4px rgba(88, 88, 88, 0.1);
+    border-radius: 6px;
+    color: #000;
+    padding: 10px 30px;
+}
+
+.bbtn.gray:hover {
+    background: #000;
+    color: #ebebeb;
+}
+
+/*============================== HEADER */
+header {
+    padding: 60px 0;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: #000;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: #F7C02D;
+}
+
+header .social-list {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+header .social-list a {
+    padding: 5px 10px;
+    margin: 0;
+}
+
+header .social-list .lni {
+    color: #AFAFAF;
+    transition: all 0.3s;
+}
+
+header .social-list a:hover .lni {
+    color: #FFD25A;
+}
+
+header .bbtn {
+    margin: 0 10px 0 auto;
+}
+
+.header-nav {
+    margin-top: 38px;
+}
+
+.header-nav a {
+    display: block;
 }
 
 /*============================== FS */
@@ -154,6 +233,7 @@ b {
 /*======================= S4 */
 .s4 {
     padding: 100px 0;
+    box-shadow: 0px 1px 0px #E5E9F2;
 }
 
 .card {
@@ -215,4 +295,101 @@ b {
 
 .card__body .bbtn {
     margin-top: 40px;
+}
+
+/* =========================== S5 */
+.s5 {
+    padding: 100px 0;
+    box-shadow: 0px 1px 0px #E5E9F2;
+}
+
+.connect-form {
+    max-width: 770px;
+    margin: auto;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+label.checkbox-label {
+    flex-direction: row;
+}
+
+label span {
+    margin-bottom: 5px;
+}
+
+label.checkbox-label {
+    margin-top: 30px;
+}
+
+input.form-control {
+    padding: 24px .75rem;
+    background-color: #ebebeb;
+}
+
+input.form-control[type=checkbox] {
+    padding: 0;
+    min-width: 25px;
+    min-height: 25px;
+    max-width: 25px;
+    max-height: 25px;
+    outline: none;
+    margin-right: 10px;
+}
+
+select.form-control,
+select.form-control option {
+    font-size: .7rem;
+}
+
+/*=========================== FOOTER */
+footer {
+    padding: 60px 0;
+}
+
+.bottom-bar a,
+.bottom-bar a:hover {
+    color: #000;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-bar i,
+header .lni {
+    font-size: 1.8rem;
+    color: #01DB5E;
+    margin-right: 10px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-menu a {
+    font-weight: 700;
+    padding: 10px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.social-list a {
+    padding: 10px;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+.social-list i {
+    margin: 0;
 }
