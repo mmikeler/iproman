@@ -25,6 +25,18 @@
         content: none
     }
 
+    .turtle:after {
+        top: auto;
+        bottom: -50px;
+        left: -90px;
+        transform: rotate(90deg) !important;
+    }
+
+    .fs .col-12:nth-child(2) .turtle:after {
+        transform: rotate(180deg);
+        top: auto;
+    }
+
     .footer-menu ul,
     .footer-social-list {
         justify-content: center;

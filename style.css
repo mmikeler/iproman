@@ -141,12 +141,12 @@ header .social-list a {
     margin: 0;
 }
 
-header .social-list .lni {
+.social-list .lni {
     color: #AFAFAF;
     transition: all 0.3s;
 }
 
-header .social-list a:hover .lni {
+.social-list a:hover .lni {
     color: #FFD25A;
 }
 
@@ -173,6 +173,26 @@ header .bbtn {
 
 .fs .col-3 {
     padding: 25px;
+}
+
+.turtle {
+    position: relative;
+}
+
+.turtle:after {
+    content: '';
+    width: 164px;
+    height: 14px;
+    background: url('./img/punktir.svg') no-repeat center / contain;
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: -15px;
+}
+
+.fs .col-12:nth-child(2) .turtle:after {
+    transform: rotate(180deg);
+    top: 0;
 }
 
 /* =========================== S2 */
